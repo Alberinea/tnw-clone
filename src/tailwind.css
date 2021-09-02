@@ -17,3 +17,7 @@
 .container-small {
   @apply max-w-screen-xl mx-auto px-10;
 }
+
+.flex-center {
+  @apply flex items-center justify-center;
+}

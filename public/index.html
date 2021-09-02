@@ -8,53 +8,12 @@
     <title>TNW | The heart of tech</title>
   </head>
   <body>
-    <header class="flex justify-between items-center">
-      <div class="m-5">
-        <a href="#">
-          <svg
-            class="h-4"
-            preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 66 16"
-          >
-            <path
-              d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"
-            ></path>
-          </svg>
-        </a>
-      </div>
-      <div class="col-span-2">
-        <nav>
-          <ul class="uppercase flex">
-            <li class="mx-3">Home</li>
-            <li class="mx-3">News</li>
-            <li class="mx-3">Events</li>
-            <li class="mx-3">Programs</li>
-            <li class="mx-3">Spaces</li>
-            <li class="mx-3">More</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="m-5">
-        <svg class="h-4 opacity-20" viewBox="0 0 16 16">
-          <path
-            d="M1.11621 4.2666a2.0026 2.0026 0 0 1-.583-.8833v-.7666A.47788.47788 0 0 1 .667 2.2749a.56688.56688 0 0 1 .3164-.1748 49.3662 49.3662 0 0 1 14.0166 0 .57417.57417 0 0 1 .333.1748.482.482 0 0 1 .13379.3418v.7666a2.0026 2.0026 0 0 1-.583.8833L9.2002 8.56689A1.88658 1.88658 0 0 1 8 8.93311a1.88658 1.88658 0 0 1-1.2002-.36622zM10.18359 10l5.28321-4.0498v7.4331a.48117.48117 0 0 1-.13379.3418.57141.57141 0 0 1-.333.1748 48.721 48.721 0 0 1-7 .5 49.29676 49.29676 0 0 1-7.0166-.5.564.564 0 0 1-.31641-.1748.47707.47707 0 0 1-.13379-.3418V5.9502L5.81641 10A3.5224 3.5224 0 0 0 8 10.6665 3.5224 3.5224 0 0 0 10.18359 10z"
-          ></path>
-        </svg>
-      </div>
-    </header>
-
-    <section class="bg-yellow-300">
-      <p class="ml-5 py-3 text-sm">
-        TNW Conference 2021: the first event ever to accept payment with
-        altcoins →
-      </p>
-    </section>
-
-    <section class="pt-24 pb-10 container">
-      <header class="flex justify-between pb-24 container-small">
+    <header class="fixed w-full z-50 top-0 bg-white">
+      <div class="flex justify-between items-center py-3">
+        <div class="mx-5">
           <a href="#">
             <svg
-              class="h-12"
+              class="h-4"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 66 16"
             >
@@ -64,306 +23,379 @@
             </svg>
           </a>
         </div>
-        <div class="text-3xl">
-          <h1>The heart of tech</h1>
+        <div class="">
+          <nav>
+            <ul class="uppercase flex">
+              <li class="mx-3">Home</li>
+              <li class="mx-3">News</li>
+              <li class="mx-3">Events</li>
+              <li class="mx-3">Programs</li>
+              <li class="mx-3">Spaces</li>
+              <li class="mx-3">More</li>
+            </ul>
+          </nav>
         </div>
-      </header>
-      <div class="grid grid-cols-4 grid-rows-5 gap-2 text-white h-[630px]">
-        <article class="showcase-image bg-space col-span-2 row-span-3">
-          <div class="m-6">
-            <h6 class="uppercase">space</h6>
-            <h1 class="text-4xl font-extrabold">
-              <a href="#">
-                Sun-like stars enjoy eating their own planets, new research
-                reveals
-              </a>
-            </h1>
+        <div class="mx-5">
+          <svg class="h-4 opacity-20" viewBox="0 0 16 16">
+            <path
+              d="M1.11621 4.2666a2.0026 2.0026 0 0 1-.583-.8833v-.7666A.47788.47788 0 0 1 .667 2.2749a.56688.56688 0 0 1 .3164-.1748 49.3662 49.3662 0 0 1 14.0166 0 .57417.57417 0 0 1 .333.1748.482.482 0 0 1 .13379.3418v.7666a2.0026 2.0026 0 0 1-.583.8833L9.2002 8.56689A1.88658 1.88658 0 0 1 8 8.93311a1.88658 1.88658 0 0 1-1.2002-.36622zM10.18359 10l5.28321-4.0498v7.4331a.48117.48117 0 0 1-.13379.3418.57141.57141 0 0 1-.333.1748 48.721 48.721 0 0 1-7 .5 49.29676 49.29676 0 0 1-7.0166-.5.564.564 0 0 1-.31641-.1748.47707.47707 0 0 1-.13379-.3418V5.9502L5.81641 10A3.5224 3.5224 0 0 0 8 10.6665 3.5224 3.5224 0 0 0 10.18359 10z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      
+      <section class="bg-yellow-300">
+        <p class="ml-5 py-3 text-sm">
+          TNW Conference 2021: the first event ever to accept payment with
+          altcoins →
+        </p>
+      </section>
+
+    </header>
+
+    <main class="pt-24 relative z-0">
+
+      <section class="pt-24 pb-10 container">
+        <header class="flex justify-between pb-24 container-small">
+            <a href="#">
+              <svg
+                class="h-14"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 66 16"
+              >
+                <path
+                  d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"
+                ></path>
+              </svg>
+            </a>
           </div>
-        </article>
-        <article class="bg-snag row-span-2 showcase-image">
-          <div class="m-6">
-            <h6 class="uppercase">plugged</h6>
-            <h1 class="font-medium text-xl">
-              Microsoft announces Surface and Windows 11 event on September 22
-            </h1>
+          <div class="text-3xl">
+            <h1>The heart of tech</h1>
           </div>
-        </article>
-        <article class="bg-privacy row-span-2 showcase-image">
-          <div class="m-6">
-            <h6 class="uppercase">tech</h6>
-            <h1 class="font-medium text-xl">
-              Why US data privacy laws go against what the people want
-            </h1>
-          </div>
-        </article>
-        <article class="bg-kid col-span-2 row-span-3 showcase-image">
-          <div class="m-6">
-            <h6 class="uppercase">gaming</h6>
-            <h1 class="text-4xl font-extrabold">
-              <a href="#">
-                Here’s what’s wrong with China’s 3-hours-a-week rule to curb
-                kids’ gaming addiction
-              </a>
-            </h1>
-          </div>
-        </article>
-        <article
+        </header>
+        <div class="grid grid-cols-4 grid-rows-5 gap-2 text-white h-[630px]">
+          <article class="showcase-image bg-space col-span-2 row-span-3">
+            <div class="m-6">
+              <h6 class="uppercase">space</h6>
+              <h1 class="text-4xl font-extrabold">
+                <a href="#">
+                  Sun-like stars enjoy eating their own planets, new research
+                  reveals
+                </a>
+              </h1>
+            </div>
+          </article>
+          <article class="bg-snag row-span-2 showcase-image">
+            <div class="m-6">
+              <h6 class="uppercase">plugged</h6>
+              <h1 class="font-medium text-xl">
+                Microsoft announces Surface and Windows 11 event on September 22
+              </h1>
+            </div>
+          </article>
+          <article class="bg-privacy row-span-2 showcase-image">
+            <div class="m-6">
+              <h6 class="uppercase">tech</h6>
+              <h1 class="font-medium text-xl">
+                Why US data privacy laws go against what the people want
+              </h1>
+            </div>
+          </article>
+          <article class="bg-kid col-span-2 row-span-3 showcase-image">
+            <div class="m-6">
+              <h6 class="uppercase">gaming</h6>
+              <h1 class="text-4xl font-extrabold">
+                <a href="#">
+                  Here’s what’s wrong with China’s 3-hours-a-week rule to curb
+                  kids’ gaming addiction
+                </a>
+              </h1>
+            </div>
+          </article>
+          <article
+            class="
+              bg-conference
+              col-span-2
+              row-span-2
+              flex
+              bg-cover bg-center
+              items-center
+              justify-center
+            "
+          >
+            <div class="font-extrabold text-xl m-6">
+              <h2 class="text-center">The countdown has begun</h2>
+              <h2>TNW Conference 2021 is less than a month away!</h2>
+              <h2 class="text-center p-7">
+                <a href="#" class="uppercase rounded-full border-2 p-4 text-sm"
+                  >get tickets</a
+                >
+              </h2>
+            </div>
+          </article>
+        </div>
+      </section>
+  
+      <section class="bg-gray-100 flex justify-center items-center flex-col">
+        <h1
           class="
-            bg-conference
-            col-span-2
-            row-span-2
-            flex
-            bg-cover bg-center
-            items-center
-            justify-center
+            uppercase
+            p-20 
+            text-3xl text-gray-400
+            font-bold font-trump
+            tracking-tighter 
           "
         >
-          <div class="font-extrabold text-xl m-6">
-            <h2 class="text-center">The countdown has begun</h2>
-            <h2>TNW Conference 2021 is less than a month away!</h2>
-            <h2 class="text-center p-7">
-              <a href="#" class="uppercase rounded-full border-2 p-4 text-sm"
-                >get tickets</a
-              >
-            </h2>
-          </div>
-        </article>
-      </div>
-    </section>
+          POPULAR ARTICLES TODAY
+        </h1>
+        <ol class="flex pb-24 container">
+          <li class="flex">
+            <span class="index">1</span>
+            <h4>
+              Why the Pentagon’s probably drooling over the upcoming Age of
+              Empires 4 launch
+            </h4>
+          </li>
+          <li class="flex">
+            <span class="index">2</span>
+            <h4>
+              Why the Pentagon’s probably drooling over the upcoming Age of
+              Empires 4 launch
+            </h4>
+          </li>
+          <li class="flex">
+            <span class="index">3</span>
+            <h4>
+              Why the Pentagon’s probably drooling over the upcoming Age of
+              Empires 4 launch
+            </h4>
+          </li>
+          <li class="flex">
+            <span class="index">4</span>
+            <h4>
+              Why the Pentagon’s probably drooling over the upcoming Age of
+              Empires 4 launch
+            </h4>
+          </li>
+          <li class="flex">
+            <span class="index">5</span>
+            <h4>
+              Why the Pentagon’s probably drooling over the upcoming Age of
+              Empires 4 launch
+            </h4>
+          </li>
+        </ol>
+      </section>
+  
+      <section class="px-10 py-28 container-small">
+        <h1 class="font-black text-4xl font-TNW">Latest stories</h1>
+        <div class="grid gap-8 grid-cols-4 grid-rows-2 pt-20 pb-14">
+          <ul>
+            <li>
+              <figure>
+                <img
+                  class="mb-5"
+                  src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Ftesla-.jpg&signature=06f4c35c88a585fd49228e5b0db82268"
+                  alt=""
+                />
+                <figcaption>
+                  The Tesla Roadster is delayed again — and it may not be the last
+                  time
+                </figcaption>
+                <span class="opacity-60">14 minutes ago</span>
+              </figure>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <figure>
+                <img
+                  class="mb-5"
+                  src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2F511895main_Kepler-11_IntroShot_full.jpg&signature=cd2857a91ed43edc289521dedceebf11"
+                  alt=""
+                />
+                <figcaption>
+                  Sun-like stars enjoy eating their own planets, new research
+                  reveals
+                </figcaption>
+                <span class="opacity-60">56 minutes ago</span>
+              </figure>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <figure>
+                <img
+                  class="mb-5"
+                  src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Frotten-apple.jpg&signature=a232b07f70228d2507269382f1a04525"
+                  alt=""
+                />
+                <figcaption>
+                  Opinion: It’s dangerously stupid to put your state ID in your
+                  Apple Wallet
+                </figcaption>
+                <span class="opacity-60">16 hours ago</span>
+              </figure>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <figure>
+                <img
+                  class="mb-5"
+                  src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FUntitled-design.jpg&signature=70f2788bbf6db66047bb419ba72d9e25"
+                  alt=""
+                />
+                <figcaption>
+                  A fake Banksy sold for $330K is a perfect symbol of the wild NFT
+                  market
+                </figcaption>
+                <span class="opacity-60">17 hours ago</span>
+              </figure>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <figure>
+                <img
+                  class="mb-5"
+                  src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FSnag_e88a867.png&signature=f482445a1ce3417ce8317d94863f8a89"
+                  alt=""
+                />
+                <figcaption>
+                  Microsoft announces Surface and Windows 11 event on September 22
+                </figcaption>
+                <span class="opacity-60">18 hours ago</span>
+              </figure>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <figure>
+                <img
+                  class="mb-5"
+                  src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Fsolterra-.jpg&signature=07e90e005a15b0dcdd52c1e49beab09d"
+                  alt=""
+                />
+                <figcaption>
+                  We finally get a good look at Subaru’s first EV: the Solterra
+                </figcaption>
+                <span class="opacity-60">19 hours ago</span>
+              </figure>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <figure>
+                <img
+                  class="mb-5"
+                  src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FDamienHirst.jpg&signature=911eed1192efc598ab5c526d1ee2014b"
+                  alt=""
+                />
+                <figcaption>
+                  Damien Hirst melds art and NFT to mess with blockchain investors
+                </figcaption>
+                <span class="opacity-60">20 hours ago</span>
+              </figure>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <figure>
+                <img
+                  class="mb-5"
+                  src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FGoogle-DevOps-Training.jpeg&signature=e3055d90ee9e81c7ef437275306cc911"
+                  alt=""
+                />
+                <figcaption>
+                  Learn Google DevOps and blockchaining in this cutting edge IT
+                  training
+                </figcaption>
+                <span class="opacity-60">21 hours ago</span>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <div class="mx-auto flex justify-center items-center">
+          <a href="#" class="uppercase rounded-full border-2 py-3 px-6 text-sm"
+            >all news</a   
+          >
+        </div>
+      </section>
+  
+      <section class="bg-gray-100 flex justify-center items-center flex-col py-32">
+        <div class="container font-bold text-4xl pb-20">
+          <h1 class="px-3 font-TNW font-black"">Explore our channels</h1> 
+        </div> 
+        <div class="container text-white flex">   
+          <article class="bg-explore1 mx-2 flex-1 bg-cover bg-center">   
+            <div class="py-8">    
+               <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/plugged.svg" alt="">
+              <h4 class="text-center mx-auto w-[80%]">  
+              Your sardonic source for consumer tech stories   
+              </h4>  
+            </div>
+          </article> 
+          <article class="bg-explore2 mx-2 flex-1 bg-cover bg-center">
+            <div class="py-8">   
+               <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/neural.svg" alt="">
+              <h4 class="text-center mx-auto w-[80%]">  
+              Human-centric AI news and analysis
+              </h4>  
+            </div>
+          </article> 
+          <article class="bg-explore3 mx-2 flex-1 bg-cover bg-center">
+            <div class="py-8">   
+               <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/shift.svg" alt="">
+              <h4 class="text-center mx-auto w-[80%]">  
+              Driving the future of sustainable mobility
+              </h4>  
+            </div>
+          </article> 
+          <article class="bg-explore4 mx-2 flex-1 bg-cover bg-center">
+            <div class="py-8">   
+               <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/growth-quarters.svg" alt="">
+              <h4 class="text-center mx-auto w-[80%]">  
+              No-nonsense perspectives on startup growth
+              </h4>  
+            </div>
+          </article> 
+          <article class="bg-explore5 mx-2 flex-1 bg-cover bg-center">
+            <div class="py-8">   
+               <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/hardfork.svg" alt="">
+              <h4 class="text-center mx-auto w-[80%]">  
+              Inside money, markets, and Big Tech 
+              </h4>  
+            </div>
+          </article> 
+        </div>
+      </section>
 
-    <section class="bg-gray-100 flex justify-center items-center flex-col">
-      <h1
-        class="
-          uppercase
-          p-12
-          text-3xl text-gray-400
-          font-bold font-trump
-          tracking-tighter
-        "
-      >
-        POPULAR ARTICLES TODAY
-      </h1>
-      <ol class="flex pb-24 container">
-        <li class="flex">
-          <span class="index">1</span>
-          <h4>
-            Why the Pentagon’s probably drooling over the upcoming Age of
-            Empires 4 launch
-          </h4>
-        </li>
-        <li class="flex">
-          <span class="index">2</span>
-          <h4>
-            Why the Pentagon’s probably drooling over the upcoming Age of
-            Empires 4 launch
-          </h4>
-        </li>
-        <li class="flex">
-          <span class="index">3</span>
-          <h4>
-            Why the Pentagon’s probably drooling over the upcoming Age of
-            Empires 4 launch
-          </h4>
-        </li>
-        <li class="flex">
-          <span class="index">4</span>
-          <h4>
-            Why the Pentagon’s probably drooling over the upcoming Age of
-            Empires 4 launch
-          </h4>
-        </li>
-        <li class="flex">
-          <span class="index">5</span>
-          <h4>
-            Why the Pentagon’s probably drooling over the upcoming Age of
-            Empires 4 launch
-          </h4>
-        </li>
-      </ol>
-    </section>
+      <section class="bg-newsletter flex-center flex-col justify-items-stretch bg-black text-white bg-fixed bg-center bg-cover">
+        <h1 class="text-5xl pt-16 font-bold">Get the snarkiest newsletter in tech</h1>
+        <p class="p-5">Subscribe to our twice-weekly <a class="text-blue-400" href="#">Big Spam</a> or check out our <strong><a class="text-blue-400" href="#">other newsletters.</a></strong></p>
+        <div class="w-[800px] flex-center bg-white text-black p-3 mb-5 rounded">
+          <svg class="h-4 opacity-20 pr-3" viewBox="0 0 16 16">
+          <path 
+            d="M1.11621 4.2666a2.0026 2.0026 0 0 1-.583-.8833v-.7666A.47788.47788 0 0 1 .667 2.2749a.56688.56688 0 0 1 .3164-.1748 49.3662 49.3662 0 0 1 14.0166 0 .57417.57417 0 0 1 .333.1748.482.482 0 0 1 .13379.3418v.7666a2.0026 2.0026 0 0 1-.583.8833L9.2002 8.56689A1.88658 1.88658 0 0 1 8 8.93311a1.88658 1.88658 0 0 1-1.2002-.36622zM10.18359 10l5.28321-4.0498v7.4331a.48117.48117 0 0 1-.13379.3418.57141.57141 0 0 1-.333.1748 48.721 48.721 0 0 1-7 .5 49.29676 49.29676 0 0 1-7.0166-.5.564.564 0 0 1-.31641-.1748.47707.47707 0 0 1-.13379-.3418V5.9502L5.81641 10A3.5224 3.5224 0 0 0 8 10.6665 3.5224 3.5224 0 0 0 10.18359 10z"
+          ></path>
+          </svg>
+          <input class="flex-auto" placeholder="Email" type="email">
+          <button class="opacity-50" type="submit" data-event-category="Homepage" data-event-action="Newsletter" data-event-label="Email subscribe - click" data-event-non-interaction="false">SUBSCRIBE</button>
+        </div>
+        <ul class="flex py-14">
+          <li>
 
-    <section class="px-10 py-28 container-small">
-      <h1 class="font-bold text-4xl">Latest stories</h1>
-      <div class="grid gap-8 grid-cols-4 grid-rows-2 py-20">
-        <ul>
-          <li>
-            <figure>
-              <img
-                class="mb-5"
-                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Ftesla-.jpg&signature=06f4c35c88a585fd49228e5b0db82268"
-                alt=""
-              />
-              <figcaption>
-                The Tesla Roadster is delayed again — and it may not be the last
-                time
-              </figcaption>
-              <span class="opacity-60">14 minutes ago</span>
-            </figure>
           </li>
         </ul>
-        <ul>
-          <li>
-            <figure>
-              <img
-                class="mb-5"
-                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2F511895main_Kepler-11_IntroShot_full.jpg&signature=cd2857a91ed43edc289521dedceebf11"
-                alt=""
-              />
-              <figcaption>
-                Sun-like stars enjoy eating their own planets, new research
-                reveals
-              </figcaption>
-              <span class="opacity-60">56 minutes ago</span>
-            </figure>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <figure>
-              <img
-                class="mb-5"
-                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Frotten-apple.jpg&signature=a232b07f70228d2507269382f1a04525"
-                alt=""
-              />
-              <figcaption>
-                Opinion: It’s dangerously stupid to put your state ID in your
-                Apple Wallet
-              </figcaption>
-              <span class="opacity-60">16 hours ago</span>
-            </figure>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <figure>
-              <img
-                class="mb-5"
-                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FUntitled-design.jpg&signature=70f2788bbf6db66047bb419ba72d9e25"
-                alt=""
-              />
-              <figcaption>
-                A fake Banksy sold for $330K is a perfect symbol of the wild NFT
-                market
-              </figcaption>
-              <span class="opacity-60">17 hours ago</span>
-            </figure>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <figure>
-              <img
-                class="mb-5"
-                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FSnag_e88a867.png&signature=f482445a1ce3417ce8317d94863f8a89"
-                alt=""
-              />
-              <figcaption>
-                Microsoft announces Surface and Windows 11 event on September 22
-              </figcaption>
-              <span class="opacity-60">18 hours ago</span>
-            </figure>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <figure>
-              <img
-                class="mb-5"
-                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Fsolterra-.jpg&signature=07e90e005a15b0dcdd52c1e49beab09d"
-                alt=""
-              />
-              <figcaption>
-                We finally get a good look at Subaru’s first EV: the Solterra
-              </figcaption>
-              <span class="opacity-60">19 hours ago</span>
-            </figure>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <figure>
-              <img
-                class="mb-5"
-                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FDamienHirst.jpg&signature=911eed1192efc598ab5c526d1ee2014b"
-                alt=""
-              />
-              <figcaption>
-                Damien Hirst melds art and NFT to mess with blockchain investors
-              </figcaption>
-              <span class="opacity-60">20 hours ago</span>
-            </figure>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <figure>
-              <img
-                class="mb-5"
-                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FGoogle-DevOps-Training.jpeg&signature=e3055d90ee9e81c7ef437275306cc911"
-                alt=""
-              />
-              <figcaption>
-                Learn Google DevOps and blockchaining in this cutting edge IT
-                training
-              </figcaption>
-              <span class="opacity-60">21 hours ago</span>
-            </figure>
-          </li>
-        </ul>
-      </div>
-      <div class="mx-auto flex justify-center items-center">
-        <a href="#" class="uppercase rounded-full border-2 py-2 px-5 text-sm"
-          >all news</a   
-        >
-      </div>
-    </section>
+      </section>
+      
+      <section class="container pt-28">
 
-    <section class="bg-gray-100 flex justify-center items-center flex-col py-32">
-      <div class="container font-bold text-4xl pb-20">
-        <h1 class="px-3"">Explore our channels</h1> 
-      </div> 
-      <div class="container text-white flex">   
-        <article class="bg-explore1 mx-2 flex-1 bg-cover bg-center">   
-          <div class="py-8">    
-             <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/plugged.svg" alt="">
-            <h4 class="text-center mx-auto w-[80%]">  
-            Your sardonic source for consumer tech stories   
-            </h4>  
-          </div>
-        </article> 
-        <article class="bg-explore2 mx-2 flex-1 bg-cover bg-center">
-          <div class="py-8">   
-             <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/neural.svg" alt="">
-            <h4 class="text-center mx-auto w-[80%]">  
-            Human-centric AI news and analysis
-            </h4>  
-          </div>
-        </article> 
-        <article class="bg-explore3 mx-2 flex-1 bg-cover bg-center">
-          <div class="py-8">   
-             <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/shift.svg" alt="">
-            <h4 class="text-center mx-auto w-[80%]">  
-            Driving the future of sustainable mobility
-            </h4>  
-          </div>
-        </article> 
-        <article class="bg-explore4 mx-2 flex-1 bg-cover bg-center">
-          <div class="py-8">   
-             <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/growth-quarters.svg" alt="">
-            <h4 class="text-center mx-auto w-[80%]">  
-            No-nonsense perspectives on startup growth
-            </h4>  
-          </div>
-        </article> 
-        <article class="bg-explore5 mx-2 flex-1 bg-cover bg-center">
-          <div class="py-8">   
-             <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/hardfork.svg" alt="">
-            <h4 class="text-center mx-auto w-[80%]">  
-            Inside money, markets, and Big Tech 
-            </h4>  
-          </div>
-        </article> 
-      </div>
-    </section>
+        <h1 class="pb-16 text-4xl font-bold">Watch what we made you</h1>
+
+      </section>
+
+    </main>
   </body>
 </html>

@@ -23,9 +23,11 @@ module.exports = {
           'url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-growth-quarters.jpg&signature=72ccfd9e92f942be8ace3526d0dc3aab)',
         explore5:
           'url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-hardfork.jpg&signature=77d9941cfc302cb2e25c39ab3043fa7b)',
+        newsletter: 'url(https://next.tnwcdn.com/assets/next/img/spacesbg.png)',
       }),
       fontFamily: {
         trump: ['Trump Soft Pro', 'Arial Narrow', 'sans-serif'],
+        TNW: ['TNW Avalon', 'sans-serif'],
       },
     },
   },
