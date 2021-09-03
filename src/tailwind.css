@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .showcase-image {
-  @apply flex bg-cover bg-center items-end;
+  @apply flex bg-cover bg-center items-end hover:cursor-pointer;
 }
 
 .index {

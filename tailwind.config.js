@@ -29,6 +29,15 @@ module.exports = {
         trump: ['Trump Soft Pro', 'Arial Narrow', 'sans-serif'],
         TNW: ['TNW Avalon', 'sans-serif'],
       },
+      colors: {
+        tnwsky: '#0cc',
+      },
+      backgroundColor: (theme) => ({
+        ...theme('colors'),
+        headeryellow: '#fd3',
+        tnwsky: '#0cc',
+        tnwskyhover: '#0dd'
+      }),
     },
   },
   variants: {

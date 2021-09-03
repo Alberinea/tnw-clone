@@ -635,9 +635,9 @@ video {
 	margin-left: 1.25rem;
 	margin-right: 1.25rem;
 }
-.mx-3 {
-	margin-left: 0.75rem;
-	margin-right: 0.75rem;
+.mx-4 {
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 .mx-auto {
 	margin-left: auto;
@@ -651,21 +651,9 @@ video {
 	margin-top: auto;
 	margin-bottom: auto;
 }
-.mx-1 {
-	margin-left: 0.25rem;
-	margin-right: 0.25rem;
-}
-.mx-10 {
-	margin-left: 2.5rem;
-	margin-right: 2.5rem;
-}
-.mx-6 {
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
-}
-.mx-4 {
-	margin-left: 1rem;
-	margin-right: 1rem;
+.my-1 {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
 }
 .ml-5 {
 	margin-left: 1.25rem;
@@ -675,6 +663,9 @@ video {
 }
 .mr-4 {
 	margin-right: 1rem;
+}
+.mt-1 {
+	margin-top: 0.25rem;
 }
 .block {
 	display: block;
@@ -785,25 +776,25 @@ video {
 	--tw-border-opacity: 1;
 	border-color: rgba(75, 85, 99, var(--tw-border-opacity));
 }
-.bg-white {
-	--tw-bg-opacity: 1;
-	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-}
-.bg-yellow-300 {
-	--tw-bg-opacity: 1;
-	background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
-}
 .bg-gray-100 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+.bg-headeryellow {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 221, 51, var(--tw-bg-opacity));
 }
 .bg-black {
 	--tw-bg-opacity: 1;
 	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
-.bg-green-400 {
+.bg-white {
 	--tw-bg-opacity: 1;
-	background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+.bg-tnwsky {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
 }
 .bg-space {
 	background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/09/511895main_Kepler-11_IntroShot_full.jpg');
@@ -850,6 +841,9 @@ video {
 .fill-current {
 	fill: currentColor;
 }
+.p-3 {
+	padding: 0.75rem;
+}
 .p-7 {
 	padding: 1.75rem;
 }
@@ -861,9 +855,6 @@ video {
 }
 .p-5 {
 	padding: 1.25rem;
-}
-.p-3 {
-	padding: 0.75rem;
 }
 .py-3 {
 	padding-top: 0.75rem;
@@ -885,9 +876,9 @@ video {
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 }
-.px-3 {
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
+.px-1 {
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
 }
 .py-8 {
 	padding-top: 2rem;
@@ -922,6 +913,9 @@ video {
 .pb-24 {
 	padding-bottom: 6rem;
 }
+.pt-3 {
+	padding-top: 0.75rem;
+}
 .pt-20 {
 	padding-top: 5rem;
 }
@@ -954,9 +948,6 @@ video {
 }
 .pt-8 {
 	padding-top: 2rem;
-}
-.pt-3 {
-	padding-top: 0.75rem;
 }
 .text-center {
 	text-align: center;
@@ -999,11 +990,11 @@ video {
 	font-size: 1.5rem;
 	line-height: 2rem;
 }
-.font-extrabold {
-	font-weight: 800;
-}
 .font-medium {
 	font-weight: 500;
+}
+.font-extrabold {
+	font-weight: 800;
 }
 .font-bold {
 	font-weight: 700;
@@ -1013,9 +1004,6 @@ video {
 }
 .font-black {
 	font-weight: 900;
-}
-.font-light {
-	font-weight: 300;
 }
 .uppercase {
 	text-transform: uppercase;
@@ -1039,6 +1027,10 @@ video {
 	--tw-text-opacity: 1;
 	color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
+.text-tnwsky {
+	--tw-text-opacity: 1;
+	color: rgba(0, 204, 204, var(--tw-text-opacity));
+}
 .opacity-20 {
 	opacity: 0.2;
 }
@@ -1057,6 +1049,10 @@ video {
 	align-items: flex-end;
 	background-size: cover;
 	background-position: center;
+}
+
+.showcase-image:hover {
+	cursor: pointer;
 }
 
 .index {
@@ -1090,4 +1086,49 @@ video {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.hover\:cursor-pointer:hover {
+	cursor: pointer;
+}
+
+.hover\:border-gray-400:hover {
+	--tw-border-opacity: 1;
+	border-color: rgba(156, 163, 175, var(--tw-border-opacity));
+}
+
+.hover\:bg-white:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.hover\:bg-tnwsky:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+}
+
+.hover\:bg-tnwskyhover:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 221, 221, var(--tw-bg-opacity));
+}
+
+.hover\:underline:hover {
+	text-decoration: underline;
+}
+
+.hover\:opacity-100:hover {
+	opacity: 1;
+}
+
+.hover\:opacity-80:hover {
+	opacity: 0.8;
+}
+
+.hover\:opacity-90:hover {
+	opacity: 0.9;
+}
+
+.focus\:outline-none:focus {
+	outline: 2px solid transparent;
+	outline-offset: 2px;
 }
