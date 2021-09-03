@@ -9,12 +9,13 @@
     <title>TNW | The heart of tech</title>
   </head>
   <body>
-    <header class="fixed w-full z-50 top-0 bg-gray-100">
+    <header class="fixed w-full z-50 bg-white lg:bg-gray-100 py-3 lg:py-0">
       <div class="flex justify-between items-center">
-        <div class="mx-5">
+        <div class="mx-5 p-3 flex relative">
+          <label class="bg-menu h-10 w-10 absolute left-0 top-2 lg:hidden" for=""></label>
           <a href="#">
             <svg
-              class="h-4"
+              class="h-4 opacity-30 lg:opacity-100 ml-7 lg:m-0"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 66 16"
             >
@@ -24,9 +25,8 @@
             </svg>
           </a>
         </div>
-        <div class="">
-          <nav>
-            <ul class="uppercase flex text-sm">
+        <nav class="">
+            <ul class="uppercase hidden lg:flex text-sm">
               <li class="p-3 hover:bg-white hover:cursor-pointer"><a href="#">Home</a></li>
               <li class="p-3 hover:bg-white hover:cursor-pointer"><a href="#">News</a></li>
               <li class="p-3 hover:bg-white hover:cursor-pointer"><a href="#">Events</a></li>
@@ -34,9 +34,8 @@
               <li class="p-3 hover:bg-white hover:cursor-pointer"><a href="#">Spaces</a></li>
               <li class="p-3 hover:bg-white hover:cursor-pointer"><a href="#">More</a></li>
             </ul>
-          </nav>
-        </div>
-        <div class="mx-5">
+        </nav>
+        <div class="mx-5 hidden lg:block">
           <svg class="h-4 opacity-20 hover:cursor-pointer" viewBox="0 0 16 16">
             <path
               d="M1.11621 4.2666a2.0026 2.0026 0 0 1-.583-.8833v-.7666A.47788.47788 0 0 1 .667 2.2749a.56688.56688 0 0 1 .3164-.1748 49.3662 49.3662 0 0 1 14.0166 0 .57417.57417 0 0 1 .333.1748.482.482 0 0 1 .13379.3418v.7666a2.0026 2.0026 0 0 1-.583.8833L9.2002 8.56689A1.88658 1.88658 0 0 1 8 8.93311a1.88658 1.88658 0 0 1-1.2002-.36622zM10.18359 10l5.28321-4.0498v7.4331a.48117.48117 0 0 1-.13379.3418.57141.57141 0 0 1-.333.1748 48.721 48.721 0 0 1-7 .5 49.29676 49.29676 0 0 1-7.0166-.5.564.564 0 0 1-.31641-.1748.47707.47707 0 0 1-.13379-.3418V5.9502L5.81641 10A3.5224 3.5224 0 0 0 8 10.6665 3.5224 3.5224 0 0 0 10.18359 10z"
@@ -45,7 +44,7 @@
         </div>
       </div>
       
-      <section class="bg-headeryellow hover:cursor-pointer">
+      <section class="bg-headeryellow hover:cursor-pointer hidden lg:block">
         <p class="ml-5 py-3 text-sm font-medium">
           TNW Conference 2021: the first event ever to accept payment with
           altcoins →
@@ -54,13 +53,13 @@
 
     </header>
 
-    <main class="pt-24 relative z-0">
+    <main class="lg:pt-24 relative z-0 bg-gray-50">
 
-      <section class="pt-24 pb-10 container">
-        <header class="flex justify-between pb-24 container-small">
+      <section class="pt-24 lg:pb-10 pb-20 container bg-gray-50">
+        <header class="flex lg:justify-between lg:flex-row items-center lg:pb-24 container-small flex-col">
             <a href="#">
               <svg
-                class="h-14"
+                class="lg:h-12 h-24"
                 preserveAspectRatio="xMidYMid meet"
                 viewBox="0 0 66 16"
               >
@@ -71,14 +70,15 @@
             </a>
           </div>
           <div class="text-3xl">
-            <h1 class="text-3xl pt-3">The heart of tech</h1>
+            <h1 class="lg:text-3xl text-base lg:pt-3 py-7">The heart of tech</h1>
           </div>
         </header>
-        <div class="grid grid-cols-4 grid-rows-5 gap-2 text-white h-[630px]">
-          <article class="showcase-image bg-space col-span-2 row-span-3">
+
+        <div class="grid lg:grid-cols-4 grid-cols-2 lg:grid-rows-5 grid-rows-4 gap-2 text-white lg:h-[630px] h-[800px]">
+          <article class="showcase-image bg-space lg:row-span-3 col-span-2 row-span-2">
             <div class="m-6">
               <h6 class="uppercase">space</h6>
-              <h1 class="text-4xl font-extrabold">
+              <h1 class="lg:text-4xl text-xl font-bold lg:font-extrabold">
                 <a href="#">
                   Sun-like stars enjoy eating their own planets, new research
                   reveals
@@ -86,7 +86,7 @@
               </h1>
             </div>
           </article>
-          <article class="bg-snag row-span-2 showcase-image">
+          <article class="bg-snag lg:row-span-2 showcase-image">
             <div class="m-6">
               <h6 class="uppercase">plugged</h6>
               <h1 class="font-medium text-xl">
@@ -94,7 +94,7 @@
               </h1>
             </div>
           </article>
-          <article class="bg-privacy row-span-2 showcase-image">
+          <article class="bg-privacy lg:row-span-2 showcase-image">
             <div class="m-6">
               <h6 class="uppercase">tech</h6>
               <h1 class="font-medium text-xl">
@@ -102,10 +102,10 @@
               </h1>
             </div>
           </article>
-          <article class="bg-kid col-span-2 row-span-3 showcase-image">
+          <article class="bg-kid lg:col-span-2 lg:row-span-3 showcase-image">
             <div class="m-6">
               <h6 class="uppercase">gaming</h6>
-              <h1 class="text-4xl font-extrabold">
+              <h1 class="lg:text-4xl font-medium text-xl lg:font-extrabold">
                 <a href="#">
                   Here’s what’s wrong with China’s 3-hours-a-week rule to curb
                   kids’ gaming addiction
@@ -116,8 +116,8 @@
           <article
             class="
               bg-conference
-              col-span-2
-              row-span-2
+              lg:col-span-2
+              lg:row-span-2
               flex
               bg-cover bg-center
               items-center
@@ -125,9 +125,9 @@
               hover:cursor-pointer
             "
           >
-            <div class="font-extrabold text-xl m-6">
+            <div class="font-black text-xl m-6">
               <h2 class="text-center">The countdown has begun</h2>
-              <h2>TNW Conference 2021 is less than a month away!</h2>
+              <h2 class="text-center">TNW Conference 2021 is less than a month away!</h2>
               <h2 class="text-center p-7">
                 <a href="#" class="uppercase rounded-full border-2 p-4 text-sm"
                   >get tickets</a
@@ -142,7 +142,8 @@
         <h1
           class="
             uppercase
-            p-20 
+            lg:p-20
+            p-10 
             text-3xl text-gray-400
             font-bold font-trump
             tracking-tighter 
@@ -150,33 +151,33 @@
         >
           POPULAR ARTICLES TODAY
         </h1>
-        <ol class="flex pb-24 container">
-          <li class="flex mx-4">
+        <ol class="flex lg:pb-24 pb-16 container lg:flex-row flex-col">
+          <li class="flex mx-4 my-4 lg:my-0">
             <span class="index">1</span>
             <h4 style="text-decoration-color:red" class="font-semibold hover:underline hover:cursor-pointer">
               Opinion: It’s dangerously stupid to put your state ID in your Apple Wallet
             </h4>
           </li>
-          <li class="flex mx-4">
+          <li class="flex mx-4 my-4 lg:my-0">
             <span class="index">2</span>
             <h4  style="text-decoration-color:red" class="font-semibold hover:underline hover:cursor-pointer">
               Why the Pentagon’s probably drooling over the upcoming Age of
               Empires 4 launch
             </h4>
           </li>
-          <li class="flex mx-4">
+          <li class="flex mx-4 my-4 lg:my-0">
             <span class="index">3</span>
             <h4  style="text-decoration-color:red" class="font-semibold hover:underline hover:cursor-pointer">
               Scientists claim humans could safely fly to Mars (if they’re back within four years)
             </h4>
           </li>
-          <li class="flex mx-4">
+          <li class="flex mx-4 my-4 lg:my-0">
             <span class="index">4</span>
             <h4 style="text-decoration-color:red" class="font-semibold hover:underline hover:cursor-pointer">
               Here’s why Apple is making an app just for classical music lovers
             </h4>
           </li>
-          <li class="flex mx-4">
+          <li class="flex mx-4 my-4 lg:my-0">
             <span class="index">5</span>
             <h4 style="text-decoration-color:red" class="font-semibold hover:underline hover:cursor-pointer">
               China’s planning a mile-long spaceship and Space Force doesn’t seem so silly now
@@ -187,12 +188,12 @@
   
       <section class="px-10 py-28 container-small">
         <h1 class="font-black text-4xl font-TNW">Latest stories</h1>
-        <div class="grid gap-8 grid-cols-4 grid-rows-2 pt-20 pb-14">
+        <div class="grid gap-8 lg:grid-cols-4 grid-cols-2 grid-rows-2 pt-20 pb-14">
           <ul>
             <li class="hover:cursor-pointer">
               <figure>
                 <img
-                  class="mb-5"
+                  class="mb-5 w-full"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Ftesla-.jpg&signature=06f4c35c88a585fd49228e5b0db82268"
                   alt=""
                 />
@@ -208,7 +209,7 @@
             <li class="hover:cursor-pointer">
               <figure>
                 <img
-                  class="mb-5"
+                  class="mb-5 w-full"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2F511895main_Kepler-11_IntroShot_full.jpg&signature=cd2857a91ed43edc289521dedceebf11"
                   alt=""
                 />
@@ -224,7 +225,7 @@
             <li class="hover:cursor-pointer">
               <figure>
                 <img
-                  class="mb-5"
+                  class="mb-5 w-full"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Frotten-apple.jpg&signature=a232b07f70228d2507269382f1a04525"
                   alt=""
                 />
@@ -240,7 +241,7 @@
             <li class="hover:cursor-pointer">
               <figure>
                 <img
-                  class="mb-5"
+                  class="mb-5 w-full"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FUntitled-design.jpg&signature=70f2788bbf6db66047bb419ba72d9e25"
                   alt=""
                 />
@@ -256,7 +257,7 @@
             <li class="hover:cursor-pointer">
               <figure>
                 <img
-                  class="mb-5"
+                  class="mb-5 w-full"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FSnag_e88a867.png&signature=f482445a1ce3417ce8317d94863f8a89"
                   alt=""
                 />
@@ -271,7 +272,7 @@
             <li class="hover:cursor-pointer">
               <figure>
                 <img
-                  class="mb-5"
+                  class="mb-5 w-full"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Fsolterra-.jpg&signature=07e90e005a15b0dcdd52c1e49beab09d"
                   alt=""
                 />
@@ -286,7 +287,7 @@
             <li class="hover:cursor-pointer">
               <figure>
                 <img
-                  class="mb-5"
+                  class="mb-5 w-full"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FDamienHirst.jpg&signature=911eed1192efc598ab5c526d1ee2014b"
                   alt=""
                 />
@@ -301,7 +302,7 @@
             <li class="hover:cursor-pointer">
               <figure>
                 <img
-                  class="mb-5"
+                  class="mb-5 w-full"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FGoogle-DevOps-Training.jpeg&signature=e3055d90ee9e81c7ef437275306cc911"
                   alt=""
                 />
@@ -370,9 +371,9 @@
       </section>
 
       <section class="bg-newsletter flex-center flex-col bg-black text-white bg-fixed bg-center bg-cover">
-        <h1 class="text-5xl pt-16 font-bold">Get the snarkiest newsletter in tech</h1>
+        <h1 class="lg:text-5xl text-4xl pt-16 font-bold">Get the snarkiest newsletter in tech</h1>
         <p class="p-5">Subscribe to our twice-weekly <a class="text-tnwsky" href="#">Big Spam</a> or check out our <strong><a class="text-tnwsky" href="#">other newsletters.</a></strong></p>
-        <div class="w-[800px] flex-center bg-white text-black p-3 mb-5 rounded">
+        <div class="lg:w-[800px] w-[600px] flex-center bg-white text-black p-3 mb-5 rounded">
           <svg class="h-4 opacity-20 pr-3" viewBox="0 0 16 16">
           <path 
             d="M1.11621 4.2666a2.0026 2.0026 0 0 1-.583-.8833v-.7666A.47788.47788 0 0 1 .667 2.2749a.56688.56688 0 0 1 .3164-.1748 49.3662 49.3662 0 0 1 14.0166 0 .57417.57417 0 0 1 .333.1748.482.482 0 0 1 .13379.3418v.7666a2.0026 2.0026 0 0 1-.583.8833L9.2002 8.56689A1.88658 1.88658 0 0 1 8 8.93311a1.88658 1.88658 0 0 1-1.2002-.36622zM10.18359 10l5.28321-4.0498v7.4331a.48117.48117 0 0 1-.13379.3418.57141.57141 0 0 1-.333.1748 48.721 48.721 0 0 1-7 .5 49.29676 49.29676 0 0 1-7.0166-.5.564.564 0 0 1-.31641-.1748.47707.47707 0 0 1-.13379-.3418V5.9502L5.81641 10A3.5224 3.5224 0 0 0 8 10.6665 3.5224 3.5224 0 0 0 10.18359 10z"
@@ -388,12 +389,12 @@
         </ul>
       </section>
       
-      <section class=" bg-gray-100">
+      <section class="bg-gray-100">
 
         <div class="container-small py-28 ">
           <h1 class="pb-16 text-4xl font-bold">Watch what we made you</h1>
-          <iframe width="967" height="544" src="https://www.youtube.com/embed/S1-wuoFsdT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="w-[968px] bg-black text-white py-10 px-6 ">
+          <iframe class="lg:w-[967px] lg:h-[544px] w-[568px] h-[321px]" src="https://www.youtube.com/embed/S1-wuoFsdT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="lg:w-[968px] w-[569px] bg-black text-white py-10 px-6 ">
             <h3 class="font-semibold text-lg">Nothing Ear (1) review: Style… and substance?</h3>
             <p class="pt-4 opacity-70 text-xs">Jul 30, 2021</p>
           </div>
@@ -407,38 +408,38 @@
           <div class="">
             <h6 class="uppercase">reach your goals</h6>
             <h2 class="font-bold text-4xl">Work with us</h2>
-            <p class="py-8 text-lg"> TNW takes center stage in the tech industry, offering creative media campaigns, sizzling tech events, bespoke innovation programs, and prime office locations in Amsterdam. Want to engage your audience more effectively, innovate your business, and position your brand in front of a digital-savvy audience?</p>
+            <p class="py-8 pb-10 text-lg"> TNW takes center stage in the tech industry, offering creative media campaigns, sizzling tech events, bespoke innovation programs, and prime office locations in Amsterdam. Want to engage your audience more effectively, innovate your business, and position your brand in front of a digital-savvy audience?</p>
             <a href="#" class="hover:bg-tnwskyhover uppercase py-4 px-5 bg-tnwsky text-white rounded-md font-bold text-sm">get in touch </a>
           </div>
           <div class="grid grid-cols-2 grid-rows-2 p-7 gap-8">
-            <div class="flex">
+            <div class="flex items-center lg:flex-row flex-col">
               <img class="h-28 w-28" src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-media.svg" alt="">
-              <h4 class="my-auto px-5 font-bold">Media</h4>
+              <h4 class="my-auto px-5 lg:pt-0 pt-4 font-bold">Media</h4>
             </div>
-            <div class="flex">
+            <div class="flex items-center lg:flex-row flex-col">
               <img class="h-28 w-28" src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-events.svg" alt="">
-              <h4 class="my-auto px-5 font-bold">Events</h4>
+              <h4 class="my-auto px-5 lg:pt-0 pt-4 font-bold">Events</h4>
             </div>
-            <div class="flex">
+            <div class="flex items-center lg:flex-row flex-col">
               <img class="h-28 w-28" src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-spaces.svg" alt="">
-              <h4 class="my-auto px-5 font-bold">Spaces</h4>
+              <h4 class="my-auto px-5 lg:pt-0 pt-4 font-bold">Spaces</h4>
             </div>
-            <div class="flex">
+            <div class="flex items-center lg:flex-row flex-col">
               <img class="h-28 w-28" src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-programs.svg" alt="">
-              <h4 class="my-auto px-5 font-bold">Programs</h4>
+              <h4 class="my-auto px-5 lg:pt-0 pt-4 font-bold">Programs</h4>
             </div>
           </div>          
         </div>
 
-        <div class="container-small flex py-10">
-          <img class="h-20 w-40 opacity-50" alt="Google" data-event-category="TNW" data-event-action="Companies" data-event-label="Google" src="https://next.tnwcdn.com/assets/next/img/partners/google.svg">
-          <img class="h-20 w-40 opacity-50" alt="Etoro" data-event-category="TNW" data-event-action="Companies" data-event-label="Etoro" src="https://next.tnwcdn.com/assets/next/img/partners/etoro.svg">
-          <img class="h-20 w-40 opacity-50" alt="IBM" data-event-category="TNW" data-event-action="Companies" data-event-label="IBM" src="https://next.tnwcdn.com/assets/next/img/partners/ibm.svg">
-          <img class="h-20 w-40 opacity-50" alt="Microsoft" data-event-category="TNW" data-event-action="Companies" data-event-label="Microsoft" src="https://next.tnwcdn.com/assets/next/img/partners/microsoft.svg">
-          <img class="h-20 w-40 opacity-50" alt="PayPal" data-event-category="TNW" data-event-action="Companies" data-event-label="PayPal" src="https://next.tnwcdn.com/assets/next/img/partners/paypal.svg">
-          <img class="h-20 w-40 opacity-50" alt="Vodafone" data-event-category="TNW" data-event-action="Companies" data-event-label="Vodafone" src="https://next.tnwcdn.com/assets/next/img/partners/vodafone.svg">
-          <img class="h-20 w-40 opacity-50" alt="Accenture" data-event-category="TNW" data-event-action="Companies" data-event-label="Accenture" src="https://next.tnwcdn.com/assets/next/img/partners/accenture.svg">
-          <img class="h-20 w-40 opacity-50" alt="McKinsey Company" data-event-category="TNW" data-event-action="Companies" data-event-label="McKinsey Company" src="https://next.tnwcdn.com/assets/next/img/partners/mckinsey-company.svg">
+        <div class="max-w-screen-xl mx-auto flex-center py-10 flex-wrap px-32 lg:flex-nowrap">
+          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="Google" data-event-category="TNW" data-event-action="Companies" data-event-label="Google" src="https://next.tnwcdn.com/assets/next/img/partners/google.svg">
+          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="Etoro" data-event-category="TNW" data-event-action="Companies" data-event-label="Etoro" src="https://next.tnwcdn.com/assets/next/img/partners/etoro.svg">
+          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="IBM" data-event-category="TNW" data-event-action="Companies" data-event-label="IBM" src="https://next.tnwcdn.com/assets/next/img/partners/ibm.svg">
+          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="Microsoft" data-event-category="TNW" data-event-action="Companies" data-event-label="Microsoft" src="https://next.tnwcdn.com/assets/next/img/partners/microsoft.svg">
+          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="PayPal" data-event-category="TNW" data-event-action="Companies" data-event-label="PayPal" src="https://next.tnwcdn.com/assets/next/img/partners/paypal.svg">
+          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="Vodafone" data-event-category="TNW" data-event-action="Companies" data-event-label="Vodafone" src="https://next.tnwcdn.com/assets/next/img/partners/vodafone.svg">
+          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="Accenture" data-event-category="TNW" data-event-action="Companies" data-event-label="Accenture" src="https://next.tnwcdn.com/assets/next/img/partners/accenture.svg">
+          <img class="lg:h-20 lg:w-40 h-260 w-60 opacity-50" alt="McKinsey Company" data-event-category="TNW" data-event-action="Companies" data-event-label="McKinsey Company" src="https://next.tnwcdn.com/assets/next/img/partners/mckinsey-company.svg">
         </div>
 
       </section>
@@ -447,12 +448,12 @@
 
     <footer class="bg-black text-white">
 
-      <div class="container grid grid-cols-2">
-        <div>
-          <div class="pt-20 pb-9">
-            <a href="#">
+      <div class="container-small grid lg:grid-cols-2 ">
+        <div class="ml-6 lg:m-0">
+          <div class="pt-20 lg:pb-9 pb-5">
+            <a href="#" class="w-40 inline-block">
               <svg
-                class="h-10 fill-current"
+                class="block fill-current m-0"
                 preserveAspectRatio="xMidYMid meet"
                 viewBox="0 0 66 16"
               >
@@ -463,7 +464,7 @@
             </a>
             <h2 class="py-4 text-2xl">The heart of tech</h2>
           </div>
-          <div class="flex pb-10">
+          <div class="flex lg:pb-10">
             <svg id="facebook" class="hover:cursor-pointer hover:opacity-90 fill-current h-6 w-6 opacity-50 mr-4" viewBox="0 0 16 16">
               <path d="M16,1V15a1.007,1.007,0,0,1-1,1H11V9.78125h2l.33594-2.30469H11V5.66406a.9118.9118,0,0,1,1-1.03125h1.5V2.55469a11.284,11.284,0,0,0-1.64062-.10938c-2.19532,0-3.30469,1.21875-3.30469,3.03907V7.47656h-2V9.78125h2V16H1a1.007,1.007,0,0,1-1-1V1A1.007,1.007,0,0,1,1,0H15A1.007,1.007,0,0,1,16,1Z"></path>
             </svg>
@@ -476,7 +477,7 @@
           </div>
         </div>
         <div class="grid grid-cols-2">
-          <ul class="pt-20">
+          <ul class="lg:pt-20 py-6">
             <h1 class="uppercase font-black text-xl pb-3 font-trump">more tnw</h1>
             <li class=""><a href="#" class="my-1 text-tnwsky hover:underline">Media</a></li>
             <li class=""><a href="#" class="my-1 text-tnwsky hover:underline">Events</a></li>
@@ -485,7 +486,7 @@
             <li class=""><a href="#" class="my-1 text-tnwsky hover:underline">Newsletter</a></li>
             <li class=""><a href="#" class="my-1 text-tnwsky hover:underline">Deals</a></li>
           </ul>
-          <ul class="pt-20">
+          <ul class="lg:pt-20  py-6">
             <h1 class="uppercase font-black text-xl pb-3 font-trump">about tnw</h1>
             <li class=""><a href="#" class="my-1 text-tnwsky hover:underline">Partner with us</a></li>
             <li class=""><a href="#" class="my-1 text-tnwsky hover:underline">Jobs</a></li>

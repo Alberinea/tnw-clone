@@ -24,6 +24,7 @@ module.exports = {
         explore5:
           'url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-hardfork.jpg&signature=77d9941cfc302cb2e25c39ab3043fa7b)',
         newsletter: 'url(https://next.tnwcdn.com/assets/next/img/spacesbg.png)',
+        menu: 'url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGQ9J00zIDNoNHY0SDN6bTE0IDBoNHY0aC00em0tNyAwaDR2NGgtNHptLTcgN2g0djRIM3ptMTQgMGg0djRoLTR6bS03IDBoNHY0aC00em0tNyA3aDR2NEgzem0xNCAwaDR2NGgtNHptLTcgMGg0djRoLTR6JyBmaWxsPScjQTdBQUIyJy8+PC9zdmc+)',
       }),
       fontFamily: {
         trump: ['Trump Soft Pro', 'Arial Narrow', 'sans-serif'],
@@ -36,7 +37,7 @@ module.exports = {
         ...theme('colors'),
         headeryellow: '#fd3',
         tnwsky: '#0cc',
-        tnwskyhover: '#0dd'
+        tnwskyhover: '#0dd',
       }),
     },
   },
