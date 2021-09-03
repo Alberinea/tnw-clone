@@ -7,7 +7,7 @@
 }
 
 .index {
-  @apply px-3 text-red-700 text-4xl leading-none;
+  @apply px-3 text-red-700 text-4xl leading-none font-semibold;
 }
 
 .container {
