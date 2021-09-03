@@ -9,7 +9,7 @@
     <title>TNW | The heart of tech</title>
   </head>
   <body>
-    <header class="fixed w-full z-50 bg-white lg:bg-gray-100 py-3 lg:py-0">
+    <header class="fixed w-full z-50 bg-white lg:bg-gray-100 py-1 lg:py-0">
       <div class="flex justify-between items-center">
         <div class="mx-5 p-3 flex relative">
           <label class="bg-menu h-10 w-10 absolute left-0 top-2 lg:hidden" for=""></label>
@@ -55,11 +55,12 @@
 
     <main class="lg:pt-24 relative z-0 bg-gray-50">
 
-      <section class="pt-24 lg:pb-10 pb-20 container bg-gray-50">
+      <section class="pt-24 lg:pb-10 pb-20 container-mobile sm:container bg-gray-50">
         <header class="flex lg:justify-between lg:flex-row items-center lg:pb-24 container-small flex-col">
+          <div class="sm:h-3/6 sm:w-3/6 h-4/6 w-4/6">
             <a href="#">
               <svg
-                class="lg:h-12 h-24"
+                class="lg:h-12 h-auto w-auto mx-auto"
                 preserveAspectRatio="xMidYMid meet"
                 viewBox="0 0 66 16"
               >
@@ -69,16 +70,17 @@
               </svg>
             </a>
           </div>
+          </div>
           <div class="text-3xl">
-            <h1 class="lg:text-3xl text-base lg:pt-3 py-7">The heart of tech</h1>
+            <h1 class="lg:text-3xl text-base lg:pt-3 sm:py-7 py-5">The heart of tech</h1>
           </div>
         </header>
 
-        <div class="grid lg:grid-cols-4 grid-cols-2 lg:grid-rows-5 grid-rows-4 gap-2 text-white lg:h-[630px] h-[800px]">
-          <article class="showcase-image bg-space lg:row-span-3 col-span-2 row-span-2">
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-rows-5 sm:grid-rows-4 grid-cols-1 gap-2 text-white lg:h-[630px] h-[800px]">
+          <article class="showcase-image bg-space lg:row-span-3 sm:col-span-2 sm:row-span-2">
             <div class="m-6">
               <h6 class="uppercase">space</h6>
-              <h1 class="lg:text-4xl text-xl font-bold lg:font-extrabold">
+              <h1 class="lg:text-4xl sm:text-xl font-bold lg:font-extrabold">
                 <a href="#">
                   Sun-like stars enjoy eating their own planets, new research
                   reveals
@@ -89,7 +91,7 @@
           <article class="bg-snag lg:row-span-2 showcase-image">
             <div class="m-6">
               <h6 class="uppercase">plugged</h6>
-              <h1 class="font-medium text-xl">
+              <h1 class="font-medium  sm:text-xl">
                 Microsoft announces Surface and Windows 11 event on September 22
               </h1>
             </div>
@@ -97,7 +99,7 @@
           <article class="bg-privacy lg:row-span-2 showcase-image">
             <div class="m-6">
               <h6 class="uppercase">tech</h6>
-              <h1 class="font-medium text-xl">
+              <h1 class="font-medium sm:text-xl">
                 Why US data privacy laws go against what the people want
               </h1>
             </div>
@@ -105,7 +107,7 @@
           <article class="bg-kid lg:col-span-2 lg:row-span-3 showcase-image">
             <div class="m-6">
               <h6 class="uppercase">gaming</h6>
-              <h1 class="lg:text-4xl font-medium text-xl lg:font-extrabold">
+              <h1 class="lg:text-4xl font-medium sm:text-xl lg:font-extrabold">
                 <a href="#">
                   Here’s what’s wrong with China’s 3-hours-a-week rule to curb
                   kids’ gaming addiction
@@ -125,11 +127,11 @@
               hover:cursor-pointer
             "
           >
-            <div class="font-black text-xl m-6">
+            <div class="font-black sm:text-xl m-6">
               <h2 class="text-center">The countdown has begun</h2>
               <h2 class="text-center">TNW Conference 2021 is less than a month away!</h2>
-              <h2 class="text-center p-7">
-                <a href="#" class="uppercase rounded-full border-2 p-4 text-sm"
+              <h2 class="text-center p-4 sm:p-7">
+                <a href="#" class="uppercase rounded-full border-2 p-2 sm:p-4 text-sm"
                   >get tickets</a
                 >
               </h2>
@@ -144,14 +146,14 @@
             uppercase
             lg:p-20
             p-10 
-            text-3xl text-gray-400
+            sm:text-3xl text-2xl text-gray-400
             font-bold font-trump
             tracking-tighter 
           "
         >
           POPULAR ARTICLES TODAY
         </h1>
-        <ol class="flex lg:pb-24 pb-16 container lg:flex-row flex-col">
+        <ol class="flex lg:pb-24 pb-16 sm:container lg:flex-row flex-col">
           <li class="flex mx-4 my-4 lg:my-0">
             <span class="index">1</span>
             <h4 style="text-decoration-color:red" class="font-semibold hover:underline hover:cursor-pointer">
@@ -186,147 +188,155 @@
         </ol>
       </section>
   
-      <section class="px-10 py-28 container-small">
-        <h1 class="font-black text-4xl font-TNW">Latest stories</h1>
-        <div class="grid gap-8 lg:grid-cols-4 grid-cols-2 grid-rows-2 pt-20 pb-14">
+      <section class="px-10 sm:py-28 py-16 container-small">
+        <h1 class="font-black sm:text-4xl text-2xl font-TNW text-center sm:text-left">Latest stories</h1>
+        <div class="grid gap-8 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 grid-rows-2 pt-20 pb-14">
           <ul>
             <li class="hover:cursor-pointer">
-              <figure>
+              <figure class="flex sm:block">
                 <img
-                  class="mb-5 w-full"
+                  class="sm:mb-5 sm:w-full sm:h-full sm:rounded-none rounded-full w-24 h-24 mr-5"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Ftesla-.jpg&signature=06f4c35c88a585fd49228e5b0db82268"
                   alt=""
                 />
                 <figcaption style="text-decoration-color:red" class="font-semibold hover:underline">
                   The Tesla Roadster is delayed again — and it may not be the last
-                  time
+                  time 
+                  <br>
+                  <span class="opacity-60">14 minutes ago</span>
                 </figcaption>
-                <span class="opacity-60">14 minutes ago</span>
               </figure>
             </li>
           </ul>
           <ul>
             <li class="hover:cursor-pointer">
-              <figure>
+              <figure class="flex sm:block">
                 <img
-                  class="mb-5 w-full"
+                  class="sm:mb-5 sm:w-full sm:h-full sm:rounded-none rounded-full w-24 h-24 mr-5"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2F511895main_Kepler-11_IntroShot_full.jpg&signature=cd2857a91ed43edc289521dedceebf11"
                   alt=""
                 />
                 <figcaption  style="text-decoration-color:red" class="font-semibold hover:underline">
                   Sun-like stars enjoy eating their own planets, new research
                   reveals
+                  <br>
+                  <span class="opacity-60">56 minutes ago</span>
                 </figcaption>
-                <span class="opacity-60">56 minutes ago</span>
               </figure>
             </li>
           </ul>
           <ul>
             <li class="hover:cursor-pointer">
-              <figure>
+              <figure class="flex sm:block">
                 <img
-                  class="mb-5 w-full"
+                  class="sm:mb-5 sm:w-full sm:h-full sm:rounded-none rounded-full w-24 h-24 mr-5"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Frotten-apple.jpg&signature=a232b07f70228d2507269382f1a04525"
                   alt=""
                 />
                 <figcaption style="text-decoration-color:red" class="font-semibold hover:underline">
                   Opinion: It’s dangerously stupid to put your state ID in your
                   Apple Wallet
+                  <br>
+                  <span class="opacity-60">16 hours ago</span>
                 </figcaption>
-                <span class="opacity-60">16 hours ago</span>
               </figure>
             </li>
           </ul>
           <ul>
             <li class="hover:cursor-pointer">
-              <figure>
+              <figure class="flex sm:block">
                 <img
-                  class="mb-5 w-full"
+                  class="sm:mb-5 sm:w-full sm:h-full sm:rounded-none rounded-full w-24 h-24 mr-5"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FUntitled-design.jpg&signature=70f2788bbf6db66047bb419ba72d9e25"
                   alt=""
                 />
                 <figcaption style="text-decoration-color:red" class="font-semibold hover:underline">
                   A fake Banksy sold for $330K is a perfect symbol of the wild NFT
                   market
+                  <br>
+                  <span class="opacity-60">17 hours ago</span>
                 </figcaption>
-                <span class="opacity-60">17 hours ago</span>
               </figure>
             </li>
           </ul>
           <ul>
             <li class="hover:cursor-pointer">
-              <figure>
+              <figure class="flex sm:block">
                 <img
-                  class="mb-5 w-full"
+                  class="sm:mb-5 sm:w-full sm:h-full sm:rounded-none rounded-full w-24 h-24 mr-5"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FSnag_e88a867.png&signature=f482445a1ce3417ce8317d94863f8a89"
                   alt=""
                 />
                 <figcaption style="text-decoration-color:red" class="font-semibold hover:underline">
                   Microsoft announces Surface and Windows 11 event on September 22
+                  <br>
+                  <span class="opacity-60">18 hours ago</span>
                 </figcaption>
-                <span class="opacity-60">18 hours ago</span>
               </figure>
             </li>
           </ul>
           <ul>
             <li class="hover:cursor-pointer">
-              <figure>
+              <figure class="flex sm:block">
                 <img
-                  class="mb-5 w-full"
+                  class="sm:mb-5 sm:w-full sm:h-full sm:rounded-none rounded-full w-24 h-24 mr-5"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2Fsolterra-.jpg&signature=07e90e005a15b0dcdd52c1e49beab09d"
                   alt=""
                 />
                 <figcaption style="text-decoration-color:red" class="font-semibold hover:underline">
                   We finally get a good look at Subaru’s first EV: the Solterra
+                  <br>
+                  <span class="opacity-60">19 hours ago</span>
                 </figcaption>
-                <span class="opacity-60">19 hours ago</span>
               </figure>
             </li>
           </ul>
           <ul>
             <li class="hover:cursor-pointer">
-              <figure>
+              <figure class="flex sm:block">
                 <img
-                  class="mb-5 w-full"
+                  class="sm:mb-5 sm:w-full sm:h-full sm:rounded-none rounded-full w-24 h-24 mr-5"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F09%2FDamienHirst.jpg&signature=911eed1192efc598ab5c526d1ee2014b"
                   alt=""
                 />
                 <figcaption style="text-decoration-color:red" class="font-semibold hover:underline">
                   Damien Hirst melds art and NFT to mess with blockchain investors
+                  <br>
+                  <span class="opacity-60">20 hours ago</span>
                 </figcaption>
-                <span class="opacity-60">20 hours ago</span>
               </figure>
             </li>
           </ul>
           <ul>
             <li class="hover:cursor-pointer">
-              <figure>
+              <figure class="flex sm:block">
                 <img
-                  class="mb-5 w-full"
+                  class="sm:mb-5 sm:w-full sm:h-full sm:rounded-none rounded-full w-24 h-24 mr-5"
                   src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FGoogle-DevOps-Training.jpeg&signature=e3055d90ee9e81c7ef437275306cc911"
                   alt=""
                 />
                 <figcaption style="text-decoration-color:red" class="font-semibold hover:underline">
                   Learn Google DevOps and blockchaining in this cutting edge IT
                   training
+                  <br>
+                  <span class="opacity-60">21 hours ago</span>
                 </figcaption>
-                <span class="opacity-60">21 hours ago</span>
               </figure>
             </li>
           </ul>
         </div>
         <div class="mx-auto flex justify-center items-center">
-          <a href="#" class="uppercase rounded-full border-2 py-3 px-6 text-sm hover:border-gray-400"
+          <a href="#" class="w-full sm:w-auto text-center uppercase rounded-full border-2 py-3 px-6 text-sm hover:border-gray-400"
             >all news</a   
           >
         </div>
       </section>
   
-      <section class="bg-gray-100 flex justify-center items-center flex-col py-32">
-        <div class="container font-bold text-4xl pb-20">
+      <section class="bg-gray-100 flex justify-center items-center flex-col sm:py-28 py-16">
+        <div class="container font-bold sm:text-4xl text-2xl pb-12 sm:pb-20 text-center">
           <h1 class="px-1 font-TNW font-black"">Explore our channels</h1> 
         </div> 
-        <div class="container text-white flex overflow-auto">   
+        <div class="container-mobile sm:container text-white flex overflow-auto">   
           <article class="bg-explore1 mx-2 lg:flex-1 bg-cover bg-center">   
             <div class="py-8 hover:cursor-pointer w-56">    
                <img class="w-28 h-28 pb-20 mx-auto" src="https://next.tnwcdn.com/assets/next/img/placeholder/media/plugged.svg" alt="">
@@ -371,9 +381,9 @@
       </section>
 
       <section class="bg-newsletter flex-center flex-col bg-black text-white bg-fixed bg-center bg-cover">
-        <h1 class="lg:text-5xl text-4xl pt-16 font-bold">Get the snarkiest newsletter in tech</h1>
-        <p class="p-5">Subscribe to our twice-weekly <a class="text-tnwsky" href="#">Big Spam</a> or check out our <strong><a class="text-tnwsky" href="#">other newsletters.</a></strong></p>
-        <div class="lg:w-[800px] w-[600px] flex-center bg-white text-black p-3 mb-5 rounded">
+        <h1 class="w-4/5 text-center lg:text-5xl sm:text-4xl text-2xl pt-16 font-bold">Get the snarkiest newsletter in tech</h1>
+        <p class="p-5 text-center">Subscribe to our twice-weekly <a class="text-tnwsky" href="#">Big Spam</a> or check out our <strong><a class="text-tnwsky" href="#">other newsletters.</a></strong></p>
+        <div class="lg:w-[800px] sm:w-[550px] w-4/5 flex-center bg-white text-black p-3 mb-5 rounded">
           <svg class="h-4 opacity-20 pr-3" viewBox="0 0 16 16">
           <path 
             d="M1.11621 4.2666a2.0026 2.0026 0 0 1-.583-.8833v-.7666A.47788.47788 0 0 1 .667 2.2749a.56688.56688 0 0 1 .3164-.1748 49.3662 49.3662 0 0 1 14.0166 0 .57417.57417 0 0 1 .333.1748.482.482 0 0 1 .13379.3418v.7666a2.0026 2.0026 0 0 1-.583.8833L9.2002 8.56689A1.88658 1.88658 0 0 1 8 8.93311a1.88658 1.88658 0 0 1-1.2002-.36622zM10.18359 10l5.28321-4.0498v7.4331a.48117.48117 0 0 1-.13379.3418.57141.57141 0 0 1-.333.1748 48.721 48.721 0 0 1-7 .5 49.29676 49.29676 0 0 1-7.0166-.5.564.564 0 0 1-.31641-.1748.47707.47707 0 0 1-.13379-.3418V5.9502L5.81641 10A3.5224 3.5224 0 0 0 8 10.6665 3.5224 3.5224 0 0 0 10.18359 10z"
@@ -391,12 +401,12 @@
       
       <section class="bg-gray-100">
 
-        <div class="container-small py-28 ">
-          <h1 class="pb-16 text-4xl font-bold">Watch what we made you</h1>
+        <div class="sm:container-small max-w-screen-xl mx-auto py-16 sm:py-28">
+          <h1 class="pb-6 sm:pb-16 sm:text-4xl text-2xl sm:text-left text-center font-bold">Watch what we made you</h1>
           <iframe class="lg:w-[967px] lg:h-[544px] w-full h-[321px]" src="https://www.youtube.com/embed/S1-wuoFsdT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="lg:w-[967px] w-full bg-black text-white py-4 lg:py-10 px-6 ">
+          <div class="border-t-2 border-white lg:w-[967px] w-full bg-black text-white py-4 lg:py-10 px-6 ">
             <h3 class="font-semibold text-lg">Nothing Ear (1) review: Style… and substance?</h3>
-            <p class="pt-4 opacity-70 text-xs">Jul 30, 2021</p>
+            <p class="sm:pt-4 opacity-70 text-xs">Jul 30, 2021</p>
           </div>
         </div>
 
@@ -404,12 +414,14 @@
 
       <section>
 
-        <div class="container-small grid grid-cols-2 pt-28 gap-6">
+        <div class="container-small grid sm:grid-cols-2 grid-cols-1 pt-28 gap-6">
           <div class="">
-            <h6 class="uppercase">reach your goals</h6>
-            <h2 class="font-bold text-4xl">Work with us</h2>
-            <p class="py-8 pb-10 text-lg"> TNW takes center stage in the tech industry, offering creative media campaigns, sizzling tech events, bespoke innovation programs, and prime office locations in Amsterdam. Want to engage your audience more effectively, innovate your business, and position your brand in front of a digital-savvy audience?</p>
-            <a href="#" class="hover:bg-tnwskyhover uppercase py-4 px-5 bg-tnwsky text-white rounded-md font-bold text-sm">get in touch </a>
+            <h6 class="uppercase sm:text-left text-center">reach your goals</h6>
+            <h2 class="font-bold sm:text-4xl text-2xl sm:text-left text-center">Work with us</h2>
+            <p class="py-8 pb-10 text-lg sm:text-left text-center"> TNW takes center stage in the tech industry, offering creative media campaigns, sizzling tech events, bespoke innovation programs, and prime office locations in Amsterdam. Want to engage your audience more effectively, innovate your business, and position your brand in front of a digital-savvy audience?</p>
+            <div class="flex-center sm:block">
+              <a href="#" class=" hover:bg-tnwskyhover uppercase py-4 px-5 bg-tnwsky text-white rounded-md font-bold text-sm">get in touch </a>
+            </div>
           </div>
           <div class="grid grid-cols-2 grid-rows-2 p-7 gap-8">
             <div class="flex items-center lg:flex-row flex-col">
@@ -431,15 +443,15 @@
           </div>          
         </div>
 
-        <div class="max-w-screen-xl mx-auto flex-center py-10 flex-wrap px-32 lg:flex-nowrap">
-          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="Google" data-event-category="TNW" data-event-action="Companies" data-event-label="Google" src="https://next.tnwcdn.com/assets/next/img/partners/google.svg">
-          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="Etoro" data-event-category="TNW" data-event-action="Companies" data-event-label="Etoro" src="https://next.tnwcdn.com/assets/next/img/partners/etoro.svg">
-          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="IBM" data-event-category="TNW" data-event-action="Companies" data-event-label="IBM" src="https://next.tnwcdn.com/assets/next/img/partners/ibm.svg">
-          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="Microsoft" data-event-category="TNW" data-event-action="Companies" data-event-label="Microsoft" src="https://next.tnwcdn.com/assets/next/img/partners/microsoft.svg">
-          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="PayPal" data-event-category="TNW" data-event-action="Companies" data-event-label="PayPal" src="https://next.tnwcdn.com/assets/next/img/partners/paypal.svg">
-          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="Vodafone" data-event-category="TNW" data-event-action="Companies" data-event-label="Vodafone" src="https://next.tnwcdn.com/assets/next/img/partners/vodafone.svg">
-          <img class="lg:h-20 lg:w-40 h-26 w-60 opacity-50" alt="Accenture" data-event-category="TNW" data-event-action="Companies" data-event-label="Accenture" src="https://next.tnwcdn.com/assets/next/img/partners/accenture.svg">
-          <img class="lg:h-20 lg:w-40 h-260 w-60 opacity-50" alt="McKinsey Company" data-event-category="TNW" data-event-action="Companies" data-event-label="McKinsey Company" src="https://next.tnwcdn.com/assets/next/img/partners/mckinsey-company.svg">
+        <div class="max-w-screen-xl mx-auto flex-center py-10 flex-wrap sm:px-32 lg:flex-nowrap">
+          <img class="lg:h-20 lg:w-40 sm:h-2/5 sm:w-2/5 h-2/5 w-2/5 opacity-50" alt="Google" data-event-category="TNW" data-event-action="Companies" data-event-label="Google" src="https://next.tnwcdn.com/assets/next/img/partners/google.svg">
+          <img class="lg:h-20 lg:w-40 sm:h-2/5 sm:w-2/5 h-2/5 w-2/5 opacity-50" alt="Etoro" data-event-category="TNW" data-event-action="Companies" data-event-label="Etoro" src="https://next.tnwcdn.com/assets/next/img/partners/etoro.svg">
+          <img class="lg:h-20 lg:w-40 sm:h-2/5 sm:w-2/5 h-2/5 w-2/5 opacity-50" alt="IBM" data-event-category="TNW" data-event-action="Companies" data-event-label="IBM" src="https://next.tnwcdn.com/assets/next/img/partners/ibm.svg">
+          <img class="lg:h-20 lg:w-40 sm:h-2/5 sm:w-2/5 h-2/5 w-2/5 opacity-50" alt="Microsoft" data-event-category="TNW" data-event-action="Companies" data-event-label="Microsoft" src="https://next.tnwcdn.com/assets/next/img/partners/microsoft.svg">
+          <img class="lg:h-20 lg:w-40 sm:h-2/5 sm:w-2/5 h-2/5 w-2/5 opacity-50" alt="PayPal" data-event-category="TNW" data-event-action="Companies" data-event-label="PayPal" src="https://next.tnwcdn.com/assets/next/img/partners/paypal.svg">
+          <img class="lg:h-20 lg:w-40 sm:h-2/5 sm:w-2/5 h-2/5 w-2/5 opacity-50" alt="Vodafone" data-event-category="TNW" data-event-action="Companies" data-event-label="Vodafone" src="https://next.tnwcdn.com/assets/next/img/partners/vodafone.svg">
+          <img class="lg:h-20 lg:w-40 sm:h-2/5 sm:w-2/5 h-2/5 w-2/5 opacity-50" alt="Accenture" data-event-category="TNW" data-event-action="Companies" data-event-label="Accenture" src="https://next.tnwcdn.com/assets/next/img/partners/accenture.svg">
+          <img class="lg:h-20 lg:w-40 sm:h-2/5 sm:w-2/5 h-2/5 w-2/5 opacity-50" alt="McKinsey Company" data-event-category="TNW" data-event-action="Companies" data-event-label="McKinsey Company" src="https://next.tnwcdn.com/assets/next/img/partners/mckinsey-company.svg">
         </div>
 
       </section>
@@ -449,7 +461,7 @@
     <footer class="bg-black text-white">
 
       <div class="container-small grid lg:grid-cols-2 ">
-        <div class="ml-6 lg:m-0">
+        <div class="sm:ml-6 lg:m-0">
           <div class="pt-20 lg:pb-9 pb-5">
             <a href="#" class="w-40 inline-block">
               <svg
@@ -500,7 +512,7 @@
       <div class="border-t-2 border-gray-600">
         <div class="container flex-center flex-col pt-8 pb-14">
           <p class="text-gray-400 text-sm py-1">TNW is a <strong class="text-white">Financial Times</strong> company</p>
-          <p class="text-gray-400 text-sm">Copyright © 2006—2021, The Next Web B.V. Made with <3 in Amsterdam. </p>
+          <p class="text-center text-gray-400 text-sm">Copyright © 2006—2021, The Next Web B.V. Made with <3 in Amsterdam. </p>
         </div>
       </div>
 

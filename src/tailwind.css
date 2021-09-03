@@ -18,6 +18,15 @@
   @apply max-w-screen-xl mx-auto px-10;
 }
 
+.container-small {
+  @apply max-w-screen-xl mx-auto px-5;
+}
+
+.container-mobile {
+  @apply max-w-screen-xl mx-auto px-2;
+}
+
 .flex-center {
   @apply flex items-center justify-center;
 }
+
